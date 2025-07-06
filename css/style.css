@@ -402,6 +402,7 @@ button {
     background: #fff;
     border-bottom: 1px solid #ddd;
     text-align: center;
+    margin-top: 10px;
 }
 .kayas-features .feature {
     flex: 1 1 80px;
@@ -412,8 +413,8 @@ button {
     font-size: 2.2em;
     background: #044000;
     color: white;
-    padding: 5px;
-    margin-top: 0px;
+    padding: 25px 25px;
+   
     border-radius: 50%;
     margin-bottom: 0px;
 }
@@ -606,7 +607,7 @@ button {
     font-size: 1rem;
 }
 .feedback-form button {
-    background-color: #e97d00;
+    background-color: #ff8800;
     color: #fff;
     padding: 12px 20px;
     font-size: 1rem;
