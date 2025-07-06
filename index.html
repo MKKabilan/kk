@@ -25,6 +25,7 @@
   <link rel="preload" href="video/1.mp4" as="video" type="video/mp4" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <noscript>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'" />
   </noscript>
@@ -36,7 +37,7 @@
   <nav class="navbar">
     <div class="logo-container">
       <a href="index.html" class="logo-link">
-        <img src="images/logo/1.png" alt="Kaya Health Care Logo" loading="lazy" class="logo" />
+        <img src="images/logo/1.png" width="150" height="50" alt="Kaya Health Care Logo" loading="lazy" class="logo" />
       </a>      
     </div>
     <div class="nav-content" id="navContent">
@@ -60,7 +61,8 @@
 </aside>
 <main id="main">
   <section class="hero">
-    <video autoplay muted loop playsinline class="hero-video">
+    <video autoplay muted loop playsinline class="hero-video" aria-hidden="true" role="presentation">
+      <track kind="captions" srclang="en" label="English" src="captions.vtt" default>
       <source src="video/1.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
@@ -137,8 +139,8 @@
 <section class="kayas-award-video">
   <div class="video-wrapper">
     <iframe width="100%" height="400" loading="lazy"
-      src="https://www.youtube.com/embed/PSAbEW0g0NI" 
-      title="Homepreneur Awards Playlist" frameborder="0"
+      src="https://www.youtube-nocookie.com/embed/PSAbEW0g0NI" 
+      title="Kaya's" frameborder="0" loading="lazy"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen></iframe>
   </div>
@@ -265,7 +267,7 @@
   <div class="footer-bottom">
     <p>© 2024 – Kaya’s | Designed & Developed by <strong>ZterTech</strong></p>
   </div>
-  <a href="https://wa.me/917094983311?text=Need%20Product%20Info%3F%20Talk%20to%20us" class="whatsapp-float" target="_blank">
+  <a href="https://wa.me/917094983311?text=Need%20Product%20Info%3F%20Talk%20to%20us" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp for product information">
     <i class="fab fa-whatsapp"></i>
     <span>Need Product Info ? Talk to us</span>
   </a>
