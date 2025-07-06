@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Details</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    img { max-width: 300px; display: block; margin-bottom: 10px; }
+    .variant-buttons button { margin-right: 8px; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1 id="productName"></h1>
+  <img id="productImage" alt="" />
+  <p id="productCategory"></p>
+  <div id="variantButtons"></div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = parseInt(urlParams.get('id'));
+
+    const products = [/* your same products array here */];
+
+    const product = products.find(p => p.id === productId);
+
+    if (product) {
+      document.getElementById("productName").textContent = product.name;
+      document.getElementById("productImage").src = product.image;
+      document.getElementById("productImage").alt = product.name;
+      document.getElementById("productCategory").textContent = "Category: " + product.category;
+
+      const variantContainer = document.getElementById("variantButtons");
+      product.variants.forEach((v, i) => {
+        const btn = document.createElement("button");
+        btn.textContent = `${v.label} - ₹${v.price}`;
+        variantContainer.appendChild(btn);
+      });
+    } else {
+      document.body.innerHTML = "<h2>Product not found.</h2>";
+    }
+  </script>
+</body>
+</html>

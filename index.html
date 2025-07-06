@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Kaya Health Care" />
+<meta name="keywords" content="health care, products, wellness, kaya" />
+<meta name="description" content="Kaya Health Care - quality health products and services." />
+<meta property="og:title" content="Kaya - Health Care Store" />
+<meta property="og:description" content="Discover Kaya's quality health care products." />
+<meta property="og:image" content="images/logo/2.png" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kaya - Health Care Store">
+<meta name="twitter:description" content="Discover Kaya's quality health care products.">
+<meta name="twitter:image" content="images/logo/2.png">
+<link rel="canonical" href="https://www.kayas.co.in/" />
+<link rel="icon" type="image/png" sizes="32x32" href="images/logo/2.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="images/logo/2.png" />
+<link rel="preload" as="video" href="your-hero.mp4" />
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<title>Kaya's Healthy Life - Health Care Store</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/footer.css">
+<script src="js/script.js" defer></script>
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="logo-container">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo/1.png" alt="Kaya Health Care Logo" loading="lazy" class="logo" />
+      </a>      
+    </div>
+    <div class="nav-content" id="navContent">
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="join.html">Join&nbsp;Us</a></li>
+          <li><a href="order.html">Order&nbsp;Tracking</a></li>
+        </ul>
+    </div>
+  </nav>    
+</header>
+<button id="cartBtn" class="cart-toggle" aria-controls="cartDrawer" aria-expanded="false" aria-label="Toggle cart drawer">
+    <i class="fas fa-shopping-cart"></i>
+    <span id="cartCount" aria-live="polite">0</span>
+  </button>  
+<aside class="cart-drawer" id="cartDrawer">
+    <h2>Your Cart</h2>
+    <div id="cartItems" class="cart-items"></div>
+    <button id="checkoutBtn" class="checkout-btn">Checkout</button>
+    <button id="clearCartBtn">Clear Cart</button>
+</aside>
+<main id="main">
+  <section class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="video/1.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Welcome to Kaya's</h1>
+<p>
+  Embrace the harmony of tradition and modern wellness. At Kaya’s, we bring you nature’s purest remedies crafted with care to fit your everyday life. 
+  From herbal oils to organic blends, our products are designed to nourish your body, mind, and soul. 
+  Experience the goodness of clean, chemical-free living — the way nature intended.
+</p>
+      <a href="aboutus.html" class="hero-btn">About Us</a>
+      <a href="#shop1" class="hero-btn shop-now-btn">Shop Now</a>
+  <div class="social-caption">Follow us On !</div>
+  <div class="social-links">
+    <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+      <i class="fab fa-youtube"></i>
+    </a>
+    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+  </div>
+    </div>
+  </section>
+  <div class="marketplace-scroll-wrapper">
+    <div class="marketplace-bar">
+      <span class="marketplace-label">Kaya's - Healthy Life @</span>
+      <a href="https://www.amazon.in" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" loading="lazy"/>
+      </a>
+      <a href="https://www.flipkart.com" target="_blank">
+        <img src="https://flipkartacademy-scoa.in/assets/logo/Flipkart_logo.png" alt="Flipkart" loading="lazy"/>
+      </a>
+      <a href="https://www.meesho.com" target="_blank">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZjx5tnc6LizvPXCjD5eo2X7kanrIFfp64mA&s" alt="Meesho" loading="lazy" />
+      </a>
+      <a href="https://www.jiomart.com" target="_blank">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPcl6PoxHcSw-EH5rw_CeA7gu0T1WldyPvsw&s" alt="Facebook MarketPlace" loading="lazy"/>
+      </a>
+    </div>
+  </div>    
+  <div class="search-filter-container" id="shop1">
+    <label for="categoryFilter">Filter by Category:</label>
+    <select id="categoryFilter" name="category">
+    <option value="all">All Categories</option>
+    <option value="Health Care">Health Care</option>
+    <option value="haircare">Hair care</option>
+    <option value="Home Care">Home Care</option>
+  </select>
+<input type="text" id="searchInput" placeholder="Search products..." aria-label="Search products" />
+</div>
+  <div id="productList" class="product-grid"></div>
+<section class="kayas-features">
+  <div class="feature">
+    <i class="fas fa-check-circle"></i>
+    <h4>High Quality<br>Products</h4>
+  </div>
+  <div class="feature">
+    <i class="fas fa-seedling"></i>
+    <h4>Locally Sourced</h4>
+  </div>
+  <div class="feature">
+    <i class="fas fa-leaf"></i>
+    <h4>Sustainable<br>Packaging</h4>
+  </div>
+  <div class="feature">
+    <i class="fas fa-truck"></i>
+    <h4>Fast Delivery</h4>
+  </div>
+</section>
+<section class="kayas-award-video">
+  <div class="video-wrapper">
+    <iframe width="100%" height="400" 
+      src="https://www.youtube.com/embed/PSAbEW0g0NI" 
+      title="Homepreneur Awards Playlist" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+</section>
+<section class="kayas-instagram-section">
+  <p class="brand-name">Kaya’s - Healthy Life</p>
+  <h2>Follow Us on Instagram</h2>
+  <a href="https://instagram.com/yourusername" target="_blank" class="insta-btn">
+    <i class="fab fa-instagram"></i> Instagram
+  </a>
+</section>
+<section class="kayas-reviews" id="reviews">
+  <h2>Customer Reviews</h2>
+  <div class="review-list" id="reviewList"></div>
+</section>
+<section class="feedback-section" id="feedback">
+  <h2>Share Your Feedback</h2>
+  <form id="feedbackForm" class="feedback-form">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" placeholder="Enter your name" required />
+    <label for="rating">Your Rating</label>
+    <div class="star-rating" id="starRating">
+      <span data-value="1">★</span>
+      <span data-value="2">★</span>
+      <span data-value="3">★</span>
+      <span data-value="4">★</span>
+      <span data-value="5">★</span>
+    </div>
+    <input type="hidden" id="rating" value="0" />
+    <label for="message">Your Message</label>
+    <textarea id="message" rows="4" placeholder="Write your feedback..." required></textarea>
+    <button type="submit">Send Feedback</button>
+  </form>
+</section>
+<section class="kayas-blogs" id="blogs">
+  <h2>Explore Our Recommended Reads</h2>
+  <div class="blog-grid">
+    <div class="blog-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ3ldmDuakAV6cv7NwNnoKDesxzij5OWk5aA&s" alt="Coconut Oil Blog" loading="lazy">
+      <div class="blog-content">
+        <h3>Digestive Care</h3>
+        <p>Discover how natural remedies and Ayurvedic care promote better digestion and overall wellness.</p>
+        <a href="https://sharangdhar.com/blogs/digestive-care" target="_blank" class="blog-btn">
+          Read more about Digestive Care
+        </a>
+      </div>
+    </div>
+    <div class="blog-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM5rviiZuKDO5TSZZlittf7Da3R1266dQH_g&s" alt="Coconut Oil Blog" loading="lazy">
+      <div class="blog-content">
+        <h3>Virgin Coconut Oil Benefits</h3>
+        <p>Learn the powerful health benefits of virgin coconut oil for skin, digestion, and immunity.</p>
+        <a href="https://twobrothersindiashop.com/blogs/food-health/benefits-of-virgin-coconut-oil" target="_blank" class="blog-btn">
+          Read more about Virgin Coconut Oil Benefits
+        </a>
+      </div>
+    </div>
+    <div class="blog-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbnfGI2-hQNi5SLDLc_80q3IKzYCEH3RkeQA&s" alt="Kollu Podi Blog" loading="lazy">
+      <div class="blog-content">
+        <h3>Kollu Podi Recipe</h3>
+        <p>Horse gram spice powder — a delicious and healthy traditional South Indian recipe for weight loss.</p>
+        <a href="https://krithiskitchen.blogspot.com/2012/11/kollu-podi-horse-gram-spice-powder-side.html" target="_blank" class="blog-btn">
+          Read more about Kollu Podi Recipe
+        </a>
+      </div>
+    </div>
+    <div class="blog-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7hyNpwIvqLymEAA6xMAq97C1_sAsjDtzwqw&s" alt="Honey Blog" loading="lazy">
+      <div class="blog-content">
+        <h3>Benefits of Pure Honey</h3>
+        <p>From skin care to boosting immunity, honey is nature’s golden healer. Read all the natural uses.</p>
+        <a href="https://naturesbox.in/blogs/organic-food/benefits-pure-honey" target="_blank" class="blog-btn">
+          Read more about the Benefits of Pure Honey
+        </a>
+      </div>
+    </div>    
+  </div>
+</section>
+</main>
+<footer class="kayas-footer">
+  <div class="footer-top">
+    <div class="footer-logo-social">
+      <h2 class="logo">Kaya's</h2>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/kayas" aria-label="Kaya's instagram Page">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://facebook.com/kayas" aria-label="Kaya's Facebook Page">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.whatsapp.com/kayas" aria-label="Kaya's whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.linkedin.com/kayas" aria-label="Kaya's linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+      <div class="footer-phone">
+        <i class="fas fa-phone"></i> +91 xxxxxxxxxx
+      </div>
+    </div>
+    <div class="footer-columns">
+      <div>
+        <h4>About</h4>
+        <p>A cottage industry creating organic products using locally sourced, chemical-free ingredients for a healthy lifestyle.</p>
+        <h5>Featured on Media</h5>
+        <a href="media.html">Media Coverage</a>
+      </div>
+      <div>
+        <h4>Policies</h4>
+        <a href="term.html">Terms and Conditions</a><br>
+        <a href="term.html">Refund and Return Policy</a><br>
+        <a href="term.html">Cancellation Policy</a><br>
+        <a href="term.html">Shipping Policy</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Phone: (+91) xxxxxxxxxx</p>
+        <p>Email: info@kayastrichy.in</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 – Kaya’s | Designed & Developed by <strong>ZterTech</strong></p>
+  </div>
+  <a href="https://wa.me/917094983311?text=Need%20Product%20Info%3F%20Talk%20to%20us" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    <span>Need Product Info ? Talk to us</span>
+  </a>
+</footer>
+</body>
+</html>

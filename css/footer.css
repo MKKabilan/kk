@@ -1,0 +1,116 @@
+.kayas-footer {
+  background: #000;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 10px 20px 5px;
+  position: relative;
+}
+.kayas-footer a {
+  color: #ffffff; /* slightly better contrast */
+  text-decoration: none;
+  font-size: 14px;
+}
+.kayas-footer a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+.footer-logo-social {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.footer-logo-social .logo {
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Arial Black', cursive;
+}
+.footer-logo-social .logo img {
+  max-width: 100%;
+  height: auto;
+}
+.footer-logo-social .social-icons {
+  margin: 10px 0;
+}
+.footer-logo-social .social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.2em;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.footer-logo-social .social-icons a:hover {
+  color: #b2fab4;
+  transform: scale(1.1);
+}
+.footer-phone {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+  text-align: left;
+}
+.footer-columns > div {
+  flex: 1 1 200px;
+  max-width: 250px;
+  flex-grow: 1;
+}
+.footer-columns h4,
+.footer-columns h5 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #fff;
+}
+.footer-columns p {
+  font-size: 14px;
+  margin: 4px 0;
+}
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #4caf50;
+  padding-top: 20px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+.footer-bottom strong {
+  color: #ffe08a;
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #00ad17;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+.whatsapp-float:hover {
+  background: #00ad17;
+  transform: scale(1.05);
+}
+@media screen and (max-width: 768px) {
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .whatsapp-float span {
+    display: none;
+  }
+
+  .whatsapp-float {
+    padding: 20px;
+    border-radius: 50%;
+  }
+}
